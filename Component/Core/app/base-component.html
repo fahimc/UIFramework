@@ -1,0 +1,38 @@
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+<link rel="import" href="ui-style.html">
+<dom-module id="base-component">
+  <template>
+  <template is="dom-if" if="{{lightTheme}}">
+    <style include="light-ui-style"></style>
+  </template>
+    <!-- local DOM goes here -->
+    <span on-click="onClick">
+    BASE component
+    </span>
+  </template>
+  <script>
+    var component = new UIComponent({
+      is: 'base-component',
+      properties: {
+        lightTheme: {
+          type: Boolean,
+          value: false
+        }
+      },
+      lightTheme: false,
+      ready:function (){
+        console.log('base ready');
+      },
+      attached: function (){
+        console.log('base attached');
+      },
+      onClick: function (){
+        console.log('click',this);
+      },
+      getURL: function (){
+        return 'dark-ui-style';
+      }
+    });
+    Polymer(component);
+  </script>
+  </dom-module>

@@ -1,0 +1,18 @@
+<dom-module id="abstract-component">
+  <template>
+    <style>
+      /* local styles go here */
+      :host {
+        display: block;
+      }
+    </style>
+    <!-- local DOM goes here -->
+    <span>
+    Abstract Component
+    </span>
+  </template>
+  <script>
+    var definition = new UIComponent.AbstractComponent().getDefinition();
+    var element = Polymer(definition); 
+  </script>
+  </dom-module>

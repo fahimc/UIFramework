@@ -1,0 +1,18 @@
+{
+  "name": "UIFramework",
+  "version": "0.0.0",
+  "authors": [
+    "Fahim Chowdhury <fahim.chowdhury1985@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^1.2.3"
+  }
+}

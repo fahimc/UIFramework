@@ -1,0 +1,28 @@
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+<link rel="stylesheet" type="text/css" href="o2-style.css">
+<dom-module id="core-component">
+  <template>
+    <style>
+      /* local styles go here */
+      :host {
+        display: block;
+      }
+    </style>
+    <!-- local DOM goes here -->
+    <span on-click="onClick">
+    Core component
+    </span>
+  </template>
+  <script>
+    var component = new CoreComponent({
+      is: 'core-component',
+      properties: {
+
+      },
+      ready:function (){
+        console.log('core ready');
+      }
+    });
+    Polymer(component);
+  </script>
+  </dom-module>

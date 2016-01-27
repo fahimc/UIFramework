@@ -1,0 +1,19 @@
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+<dom-module id="abstract-core">
+  <template>
+    <style>
+      /* local styles go here */
+      :host {
+        display: block;
+      }
+    </style>
+    <!-- local DOM goes here -->
+    <span>
+    Abstract Core
+    </span>
+  </template>
+  <script>
+    var definition = new UIComponent.AbstractCore().getDefinition();
+    Polymer(definition);
+  </script>
+  </dom-module>

@@ -1,0 +1,19 @@
+<dom-module id="ui-example">
+  <template>
+    <style>
+      /* local styles go here */
+      :host {
+        display: block;
+      }
+    </style>
+    <!-- local DOM goes here -->
+    <template is="dom-if" if="{{done}}">
+    <span  on-click="onClick">Hello world
+    </span>
+    </template>
+  </template>
+  <script>
+    var definition = new UIComponent.UIExample().getDefinition();
+    var element = Polymer(definition); 
+  </script>
+  </dom-module>
